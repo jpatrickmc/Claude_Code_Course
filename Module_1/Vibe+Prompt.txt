@@ -12,3 +12,14 @@ PRD generation prompt
 Generate a Product Requirements Document with these six sections: Vision, User Personas, Feature List (Must-Have / Should-Have / Nice-to-Have), Technical Constraints, Design Standard summary, and Success Criteria.
 
 Important context: this is a static site — no backend, no database, no authentication. The Must-Have feature list should reflect that constraint. The Design Standard section should be a brief summary — two to four sentences capturing the visual atmosphere. Keep the whole document concise — every sentence should be necessary."
+
+Content model prompt
+"Here is my PRD: [paste PRD]
+
+Based on this, map out a content model for the site. List each section of the page in order with the specific content fields each section contains. For each field, add a brief description and any constraints — length, format, tone. Keep it minimal — only what's essential for the Must-Have features. Flag any gaps between the PRD and the content model."
+
+Director's review checklist
+Does every Must-Have feature appear in the content model?
+Is the page order intentional?
+Does every field have a useful length, format, or tone constraint?
+Did the agent add any section that the PRD does not justify?

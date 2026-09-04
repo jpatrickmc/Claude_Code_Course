@@ -18,8 +18,46 @@ Content model prompt
 
 Based on this, map out a content model for the site. List each section of the page in order with the specific content fields each section contains. For each field, add a brief description and any constraints — length, format, tone. Keep it minimal — only what's essential for the Must-Have features. Flag any gaps between the PRD and the content model."
 
+## Hero
+- Headline — eight words maximum; carries the emotional core
+- Subheadline — one sentence; expands without repeating
+- Primary CTA — action-oriented label; links to the intended section
+
+-----------
+
 Director's review checklist
 Does every Must-Have feature appear in the content model?
 Is the page order intentional?
 Does every field have a useful length, format, or tone constraint?
 Did the agent add any section that the PRD does not justify?
+
+
+Site contract prompt
+"Based on my PRD and content model, write a site contract for my single-page website.
+
+The contract has three sections:
+
+Page Structure — every section in page order, with the purpose of each section stated in one sentence.
+
+Content Inventory — for each section, every content field with a brief description and any constraints on length, format, or tone.
+
+Behaviour Spec — navigation behaviour, scroll behaviour, hover states by element type, mobile layout changes, and any transitions or animations.
+
+This is a static site — no forms submitting to a backend, no authentication, no database. All behaviour is CSS and JavaScript only.
+
+Here is the PRD: [paste PRD] Here is the content model: [paste content model]"
+
+## Hero
+Purpose: Establish the atmosphere and communicate the core proposition.
+
+Content:
+- headline — string; eight words maximum
+- subheadline — string; one sentence
+- primaryCta — label and section target
+
+Behaviour:
+- CTA scrolls to the named section
+- Layout stacks at the mobile breakpoint
+- Entrance motion respects prefers-reduced-motion
+
+------------------

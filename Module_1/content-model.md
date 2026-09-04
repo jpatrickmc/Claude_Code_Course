@@ -1,61 +1,29 @@
 # Content Model: 3AM Datacenter — Static Landing Page
 
-Derived from `PRD.md`. Scoped to what the Must-Have feature set requires — a single static page, no backend, all actions link out. Decorative-only elements (motion, glow, grid texture) are excluded since they carry no content field.
+Derived from `PRD.md`. Trimmed to what the Must-Have feature set actually requires: a single static page, one clear action, everything hard-coded. The prior draft added a Value/Proof section and a duplicate closing CTA that the PRD never asked for — both are cut here.
 
-## 1. Site Meta (non-visible)
+## Site Meta *(non-visible, precedes all sections)*
+- Page Title — appears in the browser tab; ≤ 60 characters; required for any valid HTML document regardless of feature tier
 
-| Field | Description | Constraints |
-|---|---|---|
-| Page Title | Browser tab / bookmark text | ≤ 60 characters, required for valid HTML regardless of tier |
-| Meta Description | Search/link-preview summary | ≤ 155 characters — *Should-Have per PRD, not required for launch* |
+## Header
+- Brand Mark — site/product name, top-left; ≤ 20 characters; static text, monospace, no logo image (Design Standard uses type and color, not imagery)
 
-## 2. Header
+## Hero
+- Headline — eight words maximum; carries the emotional core
+- Subheadline — one sentence; expands without repeating
+- Primary CTA — action-oriented label; links to the intended section; destination must be `mailto:`, an external URL, or an in-page anchor — never a form submission (Must-Have constraint)
 
-| Field | Description | Constraints |
-|---|---|---|
-| Brand Mark | Site/product name, top-left | ≤ 20 characters, static text, monospace per Design Standard |
-| Nav Links (optional) | In-page anchor links only | 2–4 items, anchor `#id` targets only — no external nav |
-
-## 3. Hero
-
-| Field | Description | Constraints |
-|---|---|---|
-| Eyebrow / Status Label | Short atmospheric flag above headline | ≤ 6 words, uppercase, monospace, sets "nominal/unattended" tone |
-| Headline (H1) | Primary statement of the page's premise | ≤ 12 words, declarative, no exclamation points — matches "calm, confident" tone |
-| Subheadline | 1–2 sentences expanding the headline | ≤ 40 words, plain sans-serif voice, no jargon |
-| Primary CTA | Label + destination | Label ≤ 4 words; destination must be `mailto:`, external URL, or in-page anchor — **no form submission** (Must-Have constraint) |
-| Secondary CTA (optional) | Lower-emphasis link | ≤ 6 words, text-link style |
-
-## 4. Value / Proof Section
-
-| Field | Description | Constraints |
-|---|---|---|
-| Section Heading | Names what the page is proving or offering | ≤ 8 words |
-| Value Points (×3 recommended) | Title + short description per point | Title ≤ 4 words; description ≤ 25 words; fixed count, hard-coded — no dynamic list |
-
-## 5. Closing CTA
-
-| Field | Description | Constraints |
-|---|---|---|
-| Heading | Restates the core offer/message | ≤ 10 words |
-| Supporting Line | One sentence of context | ≤ 25 words |
-| CTA | Label + destination | Same constraint as Hero primary CTA — link-out only |
-
-## 6. Footer
-
-| Field | Description | Constraints |
-|---|---|---|
-| Brand / Copyright Line | Legal line + brand repeat | ≤ 15 words, static text (year hard-coded, not script-generated) |
-| Footer Links (optional) | Secondary links | Anchor or external URL only, ≤ 4 items |
+## Footer
+- Brand / Copyright Line — ≤ 15 words; static text, year hard-coded rather than script-generated; closes the page without introducing new claims
 
 ---
 
 ## Gaps Between PRD and Content Model
 
-- **No defined product or business behind the site.** The Vision describes a feeling, not what's being offered — Hero copy, Value Points, and both CTAs can't be finalized until it's clear whether this is a portfolio, a product, or a pure mood piece.
-- **The Mobile Skimmer persona requires "a single clear action," but the PRD never defines what that action is** (contact, subscribe, view work, etc.) or where it should point. CTA destinations are placeholders until this is resolved.
-- **No copywriting/tone guideline beyond the Design Standard's visual description.** Word-count and tone constraints above are inferred, not sourced from an explicit voice guide in the PRD.
-- **Design Standard references monospace treatment for "stats" and "logs,"** implying a status-feed or metrics display, but no such content is listed under Must-Have. This content model omits it; if that visual element is wanted at launch, it needs an explicit field (e.g., a fixed set of stat labels/values) added to the PRD.
-- **Should-Have SEO fields (meta description, OG image) aren't required for launch**, but Page Title is unavoidable for valid HTML — flagged above as a tier inconsistency, not a gap in scope.
-- **Nice-to-Have items (downloadable asset, analytics script) have no corresponding fields** here, since they're out of Must-Have scope; adding them later will require new content (a file to host, a tracking ID).
-- **Success Criteria's qualitative goal** ("visitors describe the page as calm/quiet/controlled") isn't measurable from the content model itself — it depends on execution of tone and design, not on any single field.
+- **No defined product or business behind the site.** The Vision describes a feeling, not an offering — the Headline, Subheadline, and Primary CTA's destination stay placeholders until it's clear what the page is actually for.
+- **The Primary CTA's target is still unresolved.** The Mobile Skimmer persona calls for "a single clear action," and this model gives it exactly one CTA — but the PRD never says what that action does (contact, subscribe, view something) or what "the intended section" is, since the page currently has no second section to point to.
+- **This draft removes the prior Value/Proof section and second CTA.** Nothing in the Vision, personas, or Must-Have list calls for enumerated value points or a repeated call to action — a single Hero statement matches the "calm, confident, nothing loud" brief more directly, and better serves the Technical Evaluator persona's preference for restraint. If a body section turns out to be necessary, it isn't justified by the current PRD and would need its own rationale added first.
+- **The Design Standard's mention of monospace "stats" and "logs" now has no home at all.** That implies a status-feed or metrics display, but no Must-Have content calls for one. Either that visual detail should be dropped from the Design Standard, or the PRD needs an explicit field for it (e.g., a fixed set of stat labels/values).
+- **No copywriting/tone guideline exists beyond the Design Standard's visual description.** The tone implied above ("carries the emotional core," "expands without repeating") is inferred from Vision and Design Standard, not a stated voice guide.
+- **Meta Description and other SEO fields are intentionally absent**, since the PRD marks them Should-Have, not Must-Have. They'll need to be added before launch, but don't belong in a Must-Have-only model.
+- **Success Criteria's qualitative goal** ("visitors describe the page as calm/quiet/controlled") still isn't something any single field can guarantee — it depends on execution, not content structure.

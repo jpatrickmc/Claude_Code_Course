@@ -1,0 +1,14 @@
+Vibe Statement
+It's quiet in the well lit datacenter at 3AM.  
+
+Prompt
+Turn this into a complete, styled HTML and CSS landing page UI. Use this feeling to define every design decision — the colour palette, typography, spacing, texture, and layout. The page should feel like you walked into that world. Return only the complete HTML file with CSS embedded.
+
+
+
+PRD generation prompt
+"I'm building a single-page static website. Here is the atmosphere I want it to embody: [your vibe sentence].
+
+Generate a Product Requirements Document with these six sections: Vision, User Personas, Feature List (Must-Have / Should-Have / Nice-to-Have), Technical Constraints, Design Standard summary, and Success Criteria.
+
+Important context: this is a static site — no backend, no database, no authentication. The Must-Have feature list should reflect that constraint. The Design Standard section should be a brief summary — two to four sentences capturing the visual atmosphere. Keep the whole document concise — every sentence should be necessary."

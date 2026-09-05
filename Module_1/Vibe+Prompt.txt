@@ -82,3 +82,19 @@ Write this as a reference document a developer would consult when making any vis
 Save the approved result as design-standard.md"
 
 ------------------
+
+CLAUDE.md generation prompt
+"Write a CLAUDE.md file for the following project. It should be brief — under one page. It contains three things only: a two to three sentence project identity statement, the technical stack with explicit constraints, and a list of supporting documents with a one-line description of each and when to read it.
+
+Project identity: [paste your vibe sentence and the Vision from your PRD] 
+Vibe: It's quiet in the well lit datacenter at 3AM. 
+Vision: A single-page static site that recreates the feeling of standing alone in a well-lit datacenter at 3AM: quiet, orderly, humming with unattended competence. The page should read as a calm, confident piece of infrastructure — nothing loud, nothing that needs a person watching it.
+
+Stack: static single-page site, one HTML file, embedded CSS and JavaScript, no frameworks, no npm, no build tools.
+
+Supporting documents: design-standard.md, site-contract.md, PRD.md, content-model.md.
+
+Do not include any detailed content that belongs in the supporting documents. If information is already in one of the supporting documents, the CLAUDE.md should point to that document rather than repeat it."
+
+------------------
+

@@ -61,3 +61,24 @@ Behaviour:
 - Entrance motion respects prefers-reduced-motion
 
 ------------------
+
+Design standard prompt
+"I'm building a single-page website. Here is the atmosphere I want it to embody: [your vibe sentence]. It's quiet in the well lit datacenter at 3AM.  
+
+Write a design standard document that translates this atmosphere into a complete visual specification. Cover:
+
+Colour palette — background colours, text colours, accent colours, with approximate hex values and a note on how each is used.
+
+Typography — font families, weight choices, size relationships between heading levels and body text, line height, letter spacing.
+
+Spacing — the philosophy expressed as concrete values. What's the base unit? What are the standard padding values?
+
+Texture and atmosphere — any grain, gradient, blur, or depth effects that carry the world.
+
+Interactions — transition timing, easing, hover state behaviour, the emotional quality of movement.
+
+Write this as a reference document a developer would consult when making any visual decision. Be specific enough that two developers reading it would make the same choices.
+
+Save the approved result as design-standard.md"
+
+------------------
